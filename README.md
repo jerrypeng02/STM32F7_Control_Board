@@ -5,19 +5,20 @@ In Sensor Systems Lab, there is a PR2 robot that has the internal cable connecti
 
 ---
 
-**Software Requirement:**
+## Software Requirement:
 
 System: Windows 7 or higher
+
 Software: STM32CubeMX, Keil uVision IDE with MDK-ARM toolchain
 
 ---
 
-**Hardware construction:**
+## Hardware construction:
 
 
 ---
 
-**Testing:**
+## Testing:
 
 
 ---
