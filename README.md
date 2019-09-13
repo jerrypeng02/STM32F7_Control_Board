@@ -1,23 +1,23 @@
-**STM32F7_Control_Board
+## STM32F7_Control_Board
 
-Purpose:
+## Purpose:
 In Sensor Systems Lab, there is a PR2 robot that has the internal cable connecting proximity sensors to the computer for trasmitting data. However, we want an application that can employ this feature on other robots. So for this application, it does not require the robot to have the internal cable. It can transfer the data from registers in proximity sensors to the Wi-Fi hub and send the data back to a computer wirelessly.
 
 ---
 
-**Software Requirement:
+**Software Requirement:**
 
 System: Windows 7 or higher
 Software: STM32CubeMX, Keil uVision IDE with MDK-ARM toolchain
 
 ---
 
-**Hardware construction:
+**Hardware construction:**
 
 
 ---
 
-**Testing:
+**Testing:**
 
 
 ---
