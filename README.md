@@ -30,7 +30,7 @@ The rest of the components are mostly capacitors and resistors. Resistors are fo
 **Pre-connection:**
 Disconnect the 2 jumpers from CN3 on STM32F411 Discovery board for programming/debugging external STM32 application and connect CN2 debug connector to the connector on the control board (Check details on the datasheet from STM32F411 discovery board)
 
-Use the STM32CubeMX to configure the following setting of the microcontroller:
+**Use the STM32CubeMX to configure the following setting of the microcontroller:**
 
 **Peripherals:**
 
