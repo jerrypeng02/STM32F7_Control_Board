@@ -27,22 +27,27 @@ The rest of the components are mostly capacitors and resistors. Resistors are fo
 
 ## Configuration:
 
-Pre-connection:
+**Pre-connection:**
 Disconnect the 2 jumpers from CN3 on STM32F411 Discovery board for programming/debugging external STM32 application and connect CN2 debug connector to the connector on the control board (Check details on the datasheet from STM32F411 discovery board)
 
 Use the STM32CubeMX to configure the following setting of the microcontroller:
 
-Peripherals:
-I2C: I2C1
-RCC: High Speed Clock (HSE) -> Crystal/Ceramic Resonator
-SYS: Debug -> Serial Wire
-USB_STG_HS: Internal Phy -> Device_Only
-			Active_VBUS checkbox
+**Peripherals:**
 
-MiddleWares:
+I2C: I2C1
+
+RCC: High Speed Clock (HSE) -> Crystal/Ceramic Resonator
+
+SYS: Debug -> Serial Wire
+
+USB_STG_HS: Internal Phy -> Device_Only, Active_VBUS checkbox
+
+**MiddleWares:**
+
 USB_DEVICE: Classs for HS IP -> Communication Device Class (Virtual Port Com)
 
-On_board:
+**On_board:**
+
 Configure PE2 as GPIO_Output
 
 ---
