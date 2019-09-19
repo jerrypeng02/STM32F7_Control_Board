@@ -11,7 +11,7 @@ System: Windows 7 or higher
 
 Hardware: STM32F411E Discovery board
 
-Software: STM32CubeMX, Keil uVision IDE with MDK-ARM toolchain
+Software: STM32CubeMX, Keil uVision IDE with MDK-ARM toolchain, Putty
 
 ---
 
@@ -54,11 +54,17 @@ Configure PE2 as GPIO_Output
 
 ## Code:
 
+The main method includes the initiation of the gpio expander device for controlling each VL6180 device in the array, turning all VL6180 devices off, turning the VL6180 devices on one by one and changing the its slave address, and finally testing if the application can send out string over the USB to the computer and shown on a terminal through virtual communication port.
 
 ---
 
 ## Testing:
 
+Note that there are two tests for now: testing if the application can send only stirng to the terminal, and testing if the terminal can receive different string according to user input as keys.
+
+For the first test, define the macro SEND_ONLY in main.c. For the second test, define the macro CALLBACK in main.c, usbd_cdc_if.c and usbd_cdc_if.h. In line 333 of the usbd_cdc_if.c and in line 140 of the usbd_cdc_if.h, the declaration of the weak object function for the call back function is for making the call back in the USB receive cdc function, which is in line 302 of the usbd_cdc_if.c. And the actual call back action is defined in main.c, which is in line 207.
+
+*Detailed setting can be refered in [video](https://www.youtube.com/watch?v=7oED-m34EKk)
 
 ---
 
